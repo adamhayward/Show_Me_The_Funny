@@ -1,0 +1,116 @@
+/* styles overall body */
+body {
+    background: #91d1d3;
+}
+/* positions note pad on the screen */
+#notebook {
+    position: relative;
+    margin-top: 100px;
+}
+/* postitions the "binder rings" */
+#binder-rings {
+    position: relative;
+    top: -125px;
+    left: -87px;
+    height: 1125px;
+}
+/* styles layout for title; date; & time */
+#heading {
+    position: relative;
+    top: 0px;
+    left:5px;
+    margin: 0px 10px 0px 0px;
+    border-radius: 0px 10px 10px 10px;
+    border-radius: 10px 10px 0px 10px;
+    padding-bottom: 10px;
+    background-color: white;
+    width: 1100px;
+    box-shadow:  10px 10px 15px  rgba(0, 0, 0, 0.3);
+}
+/* formats the page's title */
+#title  {
+    margin-top: 10px;
+    background-color: white;
+    height: 100px;
+    text-align: center;
+}
+/* formats the date & time */
+.date {
+    margin-top: 10px;
+    height: 100px;
+    background-color: white;
+    text-align: right;
+}
+/* formats current "notebook page" */
+#main-content {
+    position: relative;
+    top: 0px;
+    left:5px;
+    background-color: white;
+    width: 1100px;
+    height: 1000px;
+    margin: -10px 0px 0px 0px;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow:  10px 10px 15px  rgba(0, 0, 0, 0.3);
+}
+/* positons tabs on the right hand side of page */
+#tabs {
+    position: absolute;
+}
+/* responsible for rotating tabs horizonal */
+a{
+    transform: rotate(90deg);
+}
+/* styles tab 1 */
+#tab-1 {
+    position: relative;
+    top:  200px;
+    left: -125px;
+    margin-left: 30px; 
+    border-radius: 10px 10px 0px 0px;
+    padding: 6px;
+    width: 200px;
+    box-shadow:  5px -5px 5px  rgba(0, 0, 0, 0.3); 
+    background-color: tomato;
+}
+/* styles tab 2 */
+#tab-2 {
+    position: relative;
+    top:  400px;
+    left: -125px;
+    margin-left: 30px;
+    border-radius: 10px 10px 0px 0px; 
+    padding: 6px;
+    width: 200px;
+    box-shadow:  5px -5px 5px  rgba(0, 0, 0, 0.3);
+    background-color: rgba(46, 46, 216, 0.781);  
+}
+/* styles tab 3 */
+#tab-3 {
+    position: relative;
+    top:  600px;
+    left: -125px;
+    margin-left: 30px; 
+    border-radius: 10px 10px 0px 0px;
+    padding: 6px;
+    width: 200px;
+    box-shadow:  5px -5px 5px  rgba(0, 0, 0, 0.3);
+    background-color:green   
+}
+/* styles the back cover of the "note book" */
+.background {
+    background-color: khaki;
+    width: 1150px;
+    height: 1150px;
+    padding-top: 10px;
+    border-radius: 10px;
+    box-shadow:  20px 20px 50px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+
+    
