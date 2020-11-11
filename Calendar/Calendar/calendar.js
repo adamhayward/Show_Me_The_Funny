@@ -1,3 +1,4 @@
+let calendarShow = 1; 
 function settingDate(date,day) {
     date=new Date(date);
     date.setDate(day);
@@ -24,7 +25,7 @@ function settingDate(date,day) {
         }
         // The days of the week with button function
         console.log(dates);
-        let content = "<div class='calendarBtns'><button id='calendarPrev'>Prev</button> | <button id= 'calendarNext'>Next</button></div>";
+        let content = "<div class='calendarBtns'><button id='calendarPrev' onclick='callprev()'>Prev</button> | <button id= 'calendarNext' onclick='callnext()>Next</button></div>";
         let weekDays = [
             { shortDay: "Mon", fullDay: "Monday"},
             { shortDay: "Tue", fullDay: "Tuesday"},
@@ -38,7 +39,7 @@ function settingDate(date,day) {
         for (let i = 0; i < dates.length; i++) {
             LastDate = dates[i];
             firstDate = new Date(dates[i].getFullYear(), dates[i].getMonth(), 1);
-            content += "<div id= 'calendarTable_" + (i + 1) + "'>";
+            content += "<div id= 'calendarTable_" + (i + 1) + "'class='calendarDiv'>";
             content += 
             "<h2>" + 
             firstDate.toString().split(" ")[1] + 
@@ -79,6 +80,39 @@ function settingDate(date,day) {
             content += "</div>";
         }
         return content;
+    }
+
+    function callNext() {
+        let alltable=document.getElementsByClassName('calendarDiv');
+        document.getElementById("calendarPrev").disabled = false; 
+        calendarShow --;
+        if (calendarShow >= 1) {
+            for (let i = 0; i < alltable.lenght; i++) {
+                alltable[i].style.display = "none";
+            }
+            document.getElementsById("calendarTable_" + calendarShow).style.display =
+            "block";
+            if(calendarShow == 1) {
+                document.getElementbyId("calendarNext").disabled = true; 
+            }
+        }
+    }
+
+    function callPrev() {
+        let alltable=document.getElementsByClassName('calendarDiv');
+        document.getElementById("calendarNext").disabled = false; 
+        calendarShow --;
+        if (calendarShow >= 1) {
+            for (let i = 0; i < alltable.lenght; i++) {
+                alltable[i].style.display = "none";
+            }
+            document.getElementsById("calendarTable_" + calendarShow).style.display =
+            "block";
+            if(calendarShow == 1) {
+                document.getElementbyId("calendarPrev").disabled = true; 
+            }
+        }
+
     }
     let content = getDatesBetween("2020/01/01", "2021/01/01");
     document.getElementById("calendar").innerHTML = content;
