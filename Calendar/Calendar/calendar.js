@@ -22,8 +22,9 @@ function settingDate(date,day) {
                 date1.setMonth(date1.getMonth() + 1);
             }
         }
+        // The days of the week with button function
         console.log(dates);
-        let content = "";
+        let content = "<div class='calendarBtns'><button id='calendarPrev'>Prev</button> | <button id= 'calendarNext'>Next</button></div>";
         let weekDays = [
             { shortDay: "Mon", fullDay: "Monday"},
             { shortDay: "Tue", fullDay: "Tuesday"},
@@ -34,20 +35,20 @@ function settingDate(date,day) {
             { shortDay: "Sun", fullDay: "Sunday"},
         ];
         let LastDate, firstDate; 
-        for (let i=0; i < dates.length; i++) {
+        for (let i = 0; i < dates.length; i++) {
             LastDate = dates[i];
-            firstDate = new Date(dates[i].getFullYear(), dates[1].getMonth(), 1);
-            content += "<div id= 'calendarTable" + (i + 1) + "'>";
+            firstDate = new Date(dates[i].getFullYear(), dates[i].getMonth(), 1);
+            content += "<div id= 'calendarTable_" + (i + 1) + "'>";
             content += 
             "<h2>" + 
-            firstDate.toString().split(" ")[0] + 
+            firstDate.toString().split(" ")[1] + 
             "-" + 
             firstDate.getFullYear() + 
             "</h2>";
             content += "<table class='calendarTable'>";
             content += "<thead >"; 
             weekDays.map(item=>{
-                content+="<th>"+item.fullDay+"</th>";
+                content+="<th>"+ item.fullDay+ "</th>";
             });
             content += "</thead>";
             content += "<tbody >";
