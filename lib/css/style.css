@@ -28,14 +28,14 @@ body {
     box-shadow:  10px 10px 15px  rgba(0, 0, 0, 0.3);
 }
 /* formats the page's title */
-#title  {
+#title-elemement  {
     margin-top: 10px;
     background-color: white;
     height: 100px;
     text-align: center;
 }
 /* formats the date & time */
-.date {
+.date-element {
     margin-top: 10px;
     height: 100px;
     background-color: white;
