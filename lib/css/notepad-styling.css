@@ -1,19 +1,16 @@
  /* brings in google font to style notepad text input */
   @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
-
-  /* formats overall postion & size */
-  .paper {
+  /* styles red line on heading row when the rest of the paper stye is called */
+  .heading:before {
+    content: "";
     position: absolute;
-    width: 90%;
-    max-width: 900px;
-    min-width: 300px;
-    height: 900px;
-    margin-top: 50px;
-    margin-left: 50px auto;
-    background: #fafafa;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
-    overflow: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100px;
+    border-right: 3px solid #d44147;
+    box-sizing: border-box;
+    z-index: 1;
   }
  /* styles red vertical line & it's positing  */
   .paper:before {
@@ -22,10 +19,12 @@
     top: 0;
     bottom: 0;
     left: 0;
-    width: 60px;
+    width: 100px;
     border-right: 3px solid #d44147;
     box-sizing: border-box;
+    z-index: 1;
   }
+
   /* formats blue horizonal lines*/
  .paper-content {
     position: absolute;
@@ -38,26 +37,27 @@
   } 
  /* positions the textbox; designates where   text will begin to be input */
   textarea {
-      position: absolute;
-      left: 60px;
-  }
- /* styling for the paper & text */
-   .paper-content textarea {
-    width: 100%;
-    max-width: 100%;
+    position: absolute;
+    left: 100px;
+    margin-right: 300px;
+    width: 80%;
+    max-width: 90%;
     height: 100%;
     max-height: 100%;
     line-height: 30px;
     padding: 0 10px;
     border: 0;
     outline: 0;
-    background: transparent;
-    color: mediumblue;
+    color: #042EFF;
     font-family: 'Gochi Hand', cursive;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 22px;
     letter-spacing: 2px;
     box-sizing: border-box;
-    z-index: 1; */
+    z-index: 1; 
   } 
+
+  .blackInk{
+    color: #000000;
+  }
   
