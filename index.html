@@ -14,16 +14,17 @@
 	<div>
 
 		<div class="container background" id="notebook">
+
 			<!-- row 1 -->
 			<div class="row" id="heading">
 				<!-- col 1 (heading) -->
-				<div class="col s6 offset-s1" id="title">
-					<h4>(Title)</h4>
+				<div class="col s6 offset-s1" id="title-elemement">
+					<h4 id="title"></h4>
 				</div>
 				<!-- col 2 (date) -->
-				<div class="col s2 offset-s1 date">
-					<h5>(Date)</h5>
-					<h5>(Time)</h5>
+				<div class="col s2 offset-s1 date-element">
+					<h5 id="date"></h5>
+					<h5 id='time'></h5>
 				</div>
 			</div>
 			<!-- row 2 (content) -->
@@ -31,18 +32,14 @@
 				<div class="col s1">
 					<img id="binder-rings" src="lib/images/binder-rings.png">
 				</div>
-				<div class="col s9">
-					<div class="paper">
-						<div class="paper-content">
-							<textarea autofocus>Hello world !&#10;Here's a paper textarea tag.</textarea>
-						</div>
-					</div>
+				<div class="col s9" id="page">
+					<!-- notes & calender codes populates here: -->
 				</div>
 				<!-- side tabs -->
-				<div id="tabs" class="col s1 offset-s12">
-					<a id="tab-1" class="waves-effect waves-light btn-small">(tab 1)</a>
-					<a id="tab-2" class="waves-effect waves-light btn-small">(tab 2)</a>
-					<a id="tab-3" class="waves-effect waves-light btn-small">(tab 3)</a>
+				<div id="tab-section" class="col s1 offset-s12">
+					<a id="tab-1" class="waves-effect waves-light btn-small tabs">DASH</a>
+					<a id="tab-2" class="waves-effect waves-light btn-small tabs">NOTEPAD</a>
+					<a id="tab-3" class="waves-effect waves-light btn-small tabs">CALENDAR</a>
 				</div>
 			</div>
 		</div>
@@ -53,7 +50,9 @@
 			integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 		<sript src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
 			</script>
-			<script src="./lib/js/script.js"></script>
+			<script src="./lib/js/tab1.js"></script>
+			<script src="./lib/js/tab-2.js"></script>
+
 </body>
 
 </html>
