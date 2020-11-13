@@ -129,12 +129,7 @@ a{
     box-shadow:  20px 20px 50px rgba(0, 0, 0, 0.3);
 }
 
-
-
-/* #page {
-    position: absolute;
-} */
-
+/* buttons for tab-2 */
 
 
 
@@ -167,3 +162,23 @@ a{
     .bluePen {
         background-image: url('../images/icon-pen-blue.png');
     } 
+
+
+    .greeting {
+        position: relative;
+        top: 100px ;
+        left: 25%;
+        width: 600px;
+        height: 200px;
+        /* background-color: yellow; */
+    }
+
+    .quote {
+        position: relative;
+        top: 300px ;
+        left: 25%;
+        width: 600px;
+        height: 200px;
+        background-color: teal;
+
+    }
