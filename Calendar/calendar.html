@@ -1,38 +1,43 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <script src="calendar.js" async=""></script>
-    <style>
-        #calendar {
-            width: 80%;
-            margin-left: 10;
-            margin-top: 60px;
-        }
-        .calendarTable {
-            width: 100%;
-            border: 1px solid #000000
-        }
-        .calendarTable thead tr th {
-            background:#000000; 
-            border-bottom: 1px solid #000000;
-            padding: 20px 0px; 
-            color: #ffffff;
-        }
-        .calendar Table thead tr td { 
-            text-align:center; 
-            padding: 20px 0;
-            border:1px solid #cccccc;
-            cursor:pointer;
-            background: #dadada
-        
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calendar</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calendar">
+        <div class="month">
+          <i class="fas fa-angle-left prev"></i>
+          <div class="date">
+            <h1></h1>
+            <p></p>
+          </div>
+          <i class="fas fa-angle-right next"></i>
+        </div>
+        <div class="weekdays">
+          <div>Sun</div>
+          <div>Mon</div>
+          <div>Tue</div>
+          <div>Wed</div>
+          <div>Thu</div>
+          <div>Fri</div>
+          <div>Sat</div>
+        </div>
+        <div class="days"></div>
+      </div>
+    </div>
 
-
-
-        }
-    </style>
-</head>
-
-<body>
-    <div id="calendar"></div>
-</body>
+    <script src="Calendar.js"></script>
+  </body>
 </html>
