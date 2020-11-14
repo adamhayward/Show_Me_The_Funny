@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 /* styles overall body */
 body {
     background: #91d1d3;
@@ -40,7 +40,7 @@ body {
     
 }
 /* specific stlying for tab-2 title (note pad) */
-.notepad-title {
+.notepad-title  {
     position: relative;
     top:  10%;
     left: 33.33%;
@@ -48,6 +48,15 @@ body {
     border: 3px solid  rgba(46, 46, 216, 0.781); 
     text-align: center;
 }
+/* specific stlying for tab-3 title (calendar) */
+.calendar-title {
+    position: relative;
+    top:  10%;
+    left: 33.33%;
+    width: 66.66%;
+    border: 3px solid  rgb(207, 0, 0);
+    text-align: center;
+ }
 /* formats the date & time */
 .date-element {
     margin-top: 10px;
@@ -56,13 +65,34 @@ body {
     text-align: right;
 }
 
-#date   {
-    /* border: 3px solid #d44147;  */
-    
+#date  {
+    margin-left: 100px;
+    width: 200px;
+    background-color:whitesmoke;
+    font-family: 'Orbitron', sans-serif;
     }
-
+.home-theme {
+    width: 0px;
+    height: 0px;
+    color: transparent;
+}
 #time {
-    /* border: 3px solid #d44147; */
+    margin-left: 100px;
+    width: 200px;
+    background-color:whitesmoke;
+    font-family: 'Orbitron', sans-serif;
+}
+
+.note-book-theme {
+    border: solid;
+    border-width: 1px;
+    color:  rgba(46, 46, 216, 0.781); 
+}
+
+.calendar-theme {
+    border: solid;
+    border-width: 1px;
+    color: rgb(207, 0, 0); 
 }
 /* formats current "notebook page" */
 #main-content {
@@ -76,6 +106,10 @@ body {
     border-radius: 0px 0px 10px 10px;
     box-shadow:  10px 10px 15px  rgba(0, 0, 0, 0.3);
     z-index: 2;
+}
+
+.home-page-background {
+    background-image: url(https://image.shutterstock.com/z/stock-photo-earth-or-world-elements-of-this-image-furnished-by-nasa-1423316786.jpg);
 }
 /* positons tabs on the right hand side of page */
 #tab-section{
@@ -103,21 +137,36 @@ a{
     letter-spacing: 5px;
 }
 
+.tabs:hover {
+    box-shadow:  0px -8px 10px  rgba(0, 0, 0, 0.3); 
+}
+
 /* styles tab 1 */
 #tab-1 {
     top:  200px;
     background: linear-gradient(#0fa,#073);
+}
+
+#tab-1:hover {
+    background: linear-gradient(#0fa,#073,#073,#073); 
 }
 /* styles tab 2 */
 #tab-2 {
     top:  400px; 
     background: linear-gradient(rgb(86, 166, 206),#216);
 }
+
+#tab-2:hover {
+    background: linear-gradient(rgb(86, 166, 206),#216,#216);
+}
 /* styles tab 3 */
 #tab-3 {
     top:  600px;
     background: linear-gradient(rgb(255, 122, 122),rgb(207, 0, 0));
-    
+   }
+
+#tab-3:hover {
+    background: linear-gradient(rgb(255, 122, 122),rgb(207, 0, 0),rgb(207, 0, 0),rgb(207, 0, 0));
 }
 /* styles the back cover of the "note book" */
 .background {
@@ -137,29 +186,53 @@ a{
 
     .saveBTN{
         position: relative;
-        top: 116px;
-        right: -900px;
+        top: 850px;
+        right: -915px;
         background-image: url('../images/icon-save.png');
         background-size: 75px 75px;
-        background-color: transparent;
+        background-color: white;
         width: 75px;
         height: 75px;
         border-width: 0px;
+        border-radius: 50%;
+    }
+
+    .clearBTN {
+        position: relative;
+        top: 900px;
+        right: -855px;
+        background-image: url('../images/icon-clear.png');
+        background-size: 45px 45px;
+        background-color: white;
+        width: 45px;
+        height: 45px;
+        border-width: 0px;
+        border-radius: 50%;
     }
 
     .blackPen  {
         position: relative;
-        top: 42px;
-        right: -830px;
+        top: 770px;
+        right: -808px;
         background-image: url('../images/icon-pen-blk.png');
-        background-size: 60px 60px;
-        background-color: transparent;
-        width: 60px;
-        height: 60px;
+        background-size: 45px 45px;
+        background-color: white;
+        width: 45px;
+        height: 45px;
         border-width: 0px;
+        border-radius: 50%;
     }
 
-    .bluePen {
+    button:hover {
+        box-shadow: 0 12px 12px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+         }
+
+    button:active {
+        transform: translateY(2px);
+            
+    }
+
+      .bluePen {
         background-image: url('../images/icon-pen-blue.png');
     } 
 
@@ -170,15 +243,42 @@ a{
         left: 25%;
         width: 600px;
         height: 200px;
-        /* background-color: yellow; */
+       
     }
 
+    .greeting {
+        position: relative;
+        top: 100px ;
+        left: 25%;
+        text-align: center;
+        width: 600px;
+        height: 200px;
+        background-color: rgba(245, 245, 245, 0.322);
+        border: 4px solid #070707;
+        border-color: rgba(0,0,0,.15);
+    }
+    .clock {
+        position: relative;
+        top: 200px ;
+        left: 35%;
+        width: 400px;
+        height: 200px;
+        background-color: rgb(132, 41, 145);
+        border: 4px solid #020202;
+        border-color: rgba(0,0,0,.15);
+    }
     .quote {
         position: relative;
         top: 300px ;
         left: 25%;
         width: 600px;
         height: 200px;
-        background-color: teal;
-
+        text-align: center;
+        
+        border: 4px solid #030303;
+        border-color: rgba(0,0,0,.15);
+        font-family: 'Cedarville Cursive', cursive;
+        font-size: x-large;
     }
+
+  
