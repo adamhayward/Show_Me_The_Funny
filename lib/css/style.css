@@ -64,31 +64,33 @@ body {
     background-color: white;
     text-align: right;
 }
-
+/* formats the date in top right coner */
 #date  {
     margin-left: 100px;
     width: 200px;
     background-color:whitesmoke;
     font-family: 'Orbitron', sans-serif;
     }
+/* theme to remove date & time from top right coner of home page */
 .home-theme {
     width: 0px;
     height: 0px;
     color: transparent;
 }
+/* formats the time in top right coner */
 #time {
     margin-left: 100px;
     width: 200px;
     background-color:whitesmoke;
     font-family: 'Orbitron', sans-serif;
 }
-
+/* styles date & time for the note pad page  */
 .note-book-theme {
     border: solid;
     border-width: 1px;
     color:  rgba(46, 46, 216, 0.781); 
 }
-
+/* styles dte & time for the calendar page */
 .calendar-theme {
     border: solid;
     border-width: 1px;
@@ -106,10 +108,6 @@ body {
     border-radius: 0px 0px 10px 10px;
     box-shadow:  10px 10px 15px  rgba(0, 0, 0, 0.3);
     z-index: 2;
-}
-
-.home-page-background {
-    background-image: url(https://image.shutterstock.com/z/stock-photo-earth-or-world-elements-of-this-image-furnished-by-nasa-1423316786.jpg);
 }
 /* positons tabs on the right hand side of page */
 #tab-section{
@@ -136,17 +134,16 @@ a{
     text-shadow: 2px -2px #333;
     letter-spacing: 5px;
 }
-
+/* syles tabs to show shading when hoverd/clicked on */
 .tabs:hover {
     box-shadow:  0px -8px 10px  rgba(0, 0, 0, 0.3); 
 }
-
 /* styles tab 1 */
 #tab-1 {
     top:  200px;
     background: linear-gradient(#0fa,#073);
 }
-
+/* styels tab-1 color change upon hover */
 #tab-1:hover {
     background: linear-gradient(#0fa,#073,#073,#073); 
 }
@@ -155,7 +152,7 @@ a{
     top:  400px; 
     background: linear-gradient(rgb(86, 166, 206),#216);
 }
-
+/* styels tab-2 color change upon hover */
 #tab-2:hover {
     background: linear-gradient(rgb(86, 166, 206),#216,#216);
 }
@@ -164,7 +161,7 @@ a{
     top:  600px;
     background: linear-gradient(rgb(255, 122, 122),rgb(207, 0, 0));
    }
-
+/* styels tab-3 color change upon hover */
 #tab-3:hover {
     background: linear-gradient(rgb(255, 122, 122),rgb(207, 0, 0),rgb(207, 0, 0),rgb(207, 0, 0));
 }
@@ -179,106 +176,83 @@ a{
 }
 
 /* buttons for tab-2 */
-
-
-
-/* work in pro */
-
-    .saveBTN{
-        position: relative;
-        top: 850px;
-        right: -915px;
-        background-image: url('../images/icon-save.png');
-        background-size: 75px 75px;
-        background-color: white;
-        width: 75px;
-        height: 75px;
-        border-width: 0px;
-        border-radius: 50%;
-    }
-
-    .clearBTN {
-        position: relative;
-        top: 900px;
-        right: -855px;
-        background-image: url('../images/icon-clear.png');
-        background-size: 45px 45px;
-        background-color: white;
-        width: 45px;
-        height: 45px;
-        border-width: 0px;
-        border-radius: 50%;
-    }
-
-    .blackPen  {
-        position: relative;
-        top: 770px;
-        right: -808px;
-        background-image: url('../images/icon-pen-blk.png');
-        background-size: 45px 45px;
-        background-color: white;
-        width: 45px;
-        height: 45px;
-        border-width: 0px;
-        border-radius: 50%;
-    }
-
-    button:hover {
-        box-shadow: 0 12px 12px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-         }
-
-    button:active {
-        transform: translateY(2px);
+/* styles & positions the save button */
+.saveBTN{
+    position: relative;
+    top: 850px;
+    right: -915px;
+    background-image: url('../images/icon-save.png');
+    background-size: 75px 75px;
+    background-color: white;
+    width: 75px;
+    height: 75px;
+    border-width: 0px;
+    border-radius: 50%;
+}
+/* styles & positions the clear button */
+.clearBTN {
+    position: relative;
+    top: 900px;
+    right: -855px;
+    background-image: url('../images/icon-clear.png');
+    background-size: 45px 45px;
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    border-width: 0px;
+    border-radius: 50%;
+}
+/* styles & positions the clear button */
+.blackPen  {
+    position: relative;
+    top: 770px;
+    right: -808px;
+    background-image: url('../images/icon-pen-blk.png');
+    background-size: 45px 45px;
+    background-color: white;
+    width: 45px;
+    height: 45px;
+    border-width: 0px;
+    border-radius: 50%;
+}
+/* creates shadow effect when all buttons are hovered over */
+button:hover {
+    box-shadow: 0 12px 12px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+/* styles button when clicked to appear being pressed down. */
+button:active {
+    transform: translateY(2px);
             
-    }
+}
+/* togged image when inc color is swithced to blue */
+.bluePen {
+    background-image: url('../images/icon-pen-blue.png');
+} 
+/* postions home page greeting */
+.greeting {
+    position: relative;
+    top: 100px ;
+    left: 25%;
+    text-align: center;
+    width: 600px;
+    height: 350px;
+    background-color: rgba(245, 245, 245, 0.322);
+    border: 4px solid #070707;
+    border-color: rgba(0,0,0,.15);
+}
 
-      .bluePen {
-        background-image: url('../images/icon-pen-blue.png');
-    } 
-
-
-    .greeting {
-        position: relative;
-        top: 100px ;
-        left: 25%;
-        width: 600px;
-        height: 200px;
-       
-    }
-
-    .greeting {
-        position: relative;
-        top: 100px ;
-        left: 25%;
-        text-align: center;
-        width: 600px;
-        height: 200px;
-        background-color: rgba(245, 245, 245, 0.322);
-        border: 4px solid #070707;
-        border-color: rgba(0,0,0,.15);
-    }
-    .clock {
-        position: relative;
-        top: 200px ;
-        left: 35%;
-        width: 400px;
-        height: 200px;
-        background-color: rgb(132, 41, 145);
-        border: 4px solid #020202;
-        border-color: rgba(0,0,0,.15);
-    }
-    .quote {
-        position: relative;
-        top: 300px ;
-        left: 25%;
-        width: 600px;
-        height: 200px;
-        text-align: center;
-        
-        border: 4px solid #030303;
-        border-color: rgba(0,0,0,.15);
-        font-family: 'Cedarville Cursive', cursive;
-        font-size: x-large;
-    }
+/* sytels the quote on the home page */
+.quote {
+    position: relative;
+    top: 200px ;
+    left: 25%;
+    width: 600px;
+    height: 200px;
+    text-align: center;
+    border: 4px solid #030303;
+    border-color: rgba(0,0,0,.15);
+    font-family: 'Cedarville Cursive', cursive;
+    font-size: x-large;
+}
 
   
