@@ -23,8 +23,8 @@
 				</div>
 				<!-- col 2 (date) -->
 				<div class="col s2 offset-s1 date-element">
-					<h5 id="date"></h5>
-					<h5 id='time'></h5>
+					<h5 class="date" id="date"></h5>
+					<h5 class="time" id='time'></h5>
 				</div>
 			</div>
 			<!-- row 2 (content) -->
@@ -32,27 +32,8 @@
 				<div class="col s1">
 					<img id="binder-rings" src="lib/images/binder-rings.png">
 				</div>
-				<div class="col s9 page" id="page">
+				<div class="col s9" id="page">
 					<!-- notes & calender codes populates here: -->
-					<div class="responsive-calendar">
-						<div class="controls">
-							<a class="pull-left" data-go="prev"><div class="btn"><i class="icon-chevron icon-chevron-rotate"></i></div></a>
-							<h4><span data-head-year></span> <span data-head-month></span></h4>
-							<a class="pull-right" data-go="next"><div class="btn"><i class="icon-chevron"></i></div></a>
-						</div><hr/>
-						<div class="day-headers">
-						  <div class="day header">Mon</div>
-						  <div class="day header">Tue</div>
-						  <div class="day header">Wed</div>
-						  <div class="day header">Thu</div>
-						  <div class="day header">Fri</div>
-						  <div class="day header">Sat</div>
-						  <div class="day header">Sun</div>
-						</div>
-						<div class="days" data-group="days">
-						  <!-- the place where days will be generated -->
-						</div>
-					  </div>
 				</div>
 				<!-- side tabs -->
 				<div id="tab-section" class="col s1 offset-s12">
@@ -65,12 +46,14 @@
 		<footer>
 		</footer>
 		<!-- links to JS files/CDN's -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 		<script src="https://code.jquery.com/jquery-3.5.1.min.js"
 			integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
 		<sript src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js">
 			</script>
-			<script src="./lib/js/tab-1.js"></script>
+			<script src="./lib/js/tab-1(pre).js"></script>
 			<script src="./lib/js/tab-2.js"></script>
+			<script src="./lib/js/tab-3.js"></script>
 
 </body>
 
